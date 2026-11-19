@@ -1,0 +1,67 @@
+:root {
+  --green: #254536;
+  --ink: #172c25;
+  --cream: #f7f3e8;
+  --sand: #eee5d9;
+  --accent: #f07824;
+  --slate: #8ec4e6;
+  --terra: #b86b50;
+  --olive: #5a7350;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #f7f3e8;
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.logo img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.shop-nav {
+  color: #ffb477;
+  font-weight: 800;
+}
+
+.btn,
+.btn.shop-btn {
+  background: #f07824;
+  color: #172c25;
+}
+
+.btn.dark {
+  background: var(--green);
+  color: var(--cream);
+}
+
+.hero .eyebrow { color: #ffb477; }
+.hero .shop-btn { background: var(--cream); color: var(--green); }
+.section-label { color: var(--green); }
+.services { background: #eee5d9; }
+.service { border-top: 3px solid var(--accent); }
+.process .section-label, .step strong { color: #ffb477; }
+.step { border-top-color: #8ec4e6; }
+footer { background: var(--green); }
+.nav-cta { border-color: #ffb477; }
+
+@media (max-width: 1050px) {
+  .mobile-toggle { display: block; background: none; border: 0; color: white; font-size: 27px; cursor: pointer; }
+  nav { display: none; position: absolute; top: 95px; left: 0; right: 0; background: var(--green); padding: 28px 5%; flex-direction: column; align-items: start; }
+  nav.open { display: flex; }
+}
+
+@media (max-width: 520px) {
+  .logo { font-size: 21px; gap: 8px; }
+  .logo img { width: 46px; height: 46px; }
+}
