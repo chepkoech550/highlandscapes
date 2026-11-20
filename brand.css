@@ -65,3 +65,12 @@ footer { background: var(--green); }
   .logo { font-size: 21px; gap: 8px; }
   .logo img { width: 46px; height: 46px; }
 }
+.hero {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.35)
+  ), url("./highlandscapes-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
